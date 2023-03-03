@@ -16,6 +16,7 @@ add_mlir_library(TorchMLIRTorchPasses
   ReifyDtypeCalculations.cpp
   ReifyAbstractInterpCalculationsUtils.cpp
   AbstractInterpLibrary.cpp
+  TorchF64toF32.cpp
   SimplifyShapeCalculations.cpp
   SimplifyDtypeCalculations.cpp
   SimplifyAbstractInterpCalculationsUtils.cpp

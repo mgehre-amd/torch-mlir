@@ -123,8 +123,10 @@ createLowerToBackendContractPass(int maxIterations, bool decompose,
 std::unique_ptr<OperationPass<ModuleOp>>
 createVerifyBackendContractNoDecompositionsPass();
 
-StringRef getAbstractInterpLibrary();
+std::unique_ptr<OperationPass<func::FuncOp>>
+createTorchF64toF32Pass();
 
+StringRef getAbstractInterpLibrary();
 } // namespace Torch
 
 /// Registers all Torch transformation passes.
